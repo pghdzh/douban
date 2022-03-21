@@ -1,0 +1,511 @@
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+header{
+    margin: 0;
+    padding: 0;
+    height: 26px;
+    line-height: 26px;
+    font-size: small;
+    background-color: #545652;
+    position: relative;
+}
+
+header .nav{
+    margin-left: -30px;
+    margin-top: -10px;
+}
+
+header .nav li{
+    float: left;
+    margin-right:16px;
+} 
+
+header .log{
+    position: absolute;
+    right: 0;
+    bottom: -13px;
+}
+
+header .log li{
+    float: right;
+    margin: 0 10px;
+}
+
+header li,header li a{
+    color: gainsboro;
+}
+
+header li:hover,header a:hover{
+    color: #FFF;
+}
+
+.search{
+    padding:16px 0 ;
+    position: relative;
+    background-color:rgb(240, 243, 239);
+}
+
+.search .top{
+    padding-bottom: 20px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.search .top .title{
+    font-size: 27px;
+    font-weight: bold;
+    color:sandybrown;
+    margin-left: 200px;
+}
+
+.search .top input{
+    margin-left: 40px;
+    width: 400px;
+    height: 24px;
+    border: none;
+    border-radius: 2px;
+}
+
+.search .top .img{
+    background-image: url(../../豆瓣首页/img/搜索.png);
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 5px 4px;
+    margin-left: -4px;
+    margin-bottom: -8px;
+    background-color: grey;
+    border-radius: 3px;
+}
+
+.search .bottom{
+    margin-left: 170px;
+}
+
+.search .bottom ul li{
+    float: left;
+    margin-right: 20px;
+    font-weight: lighter;
+}
+
+.search .bottom ul li:hover{
+    color: #fff;
+    background-color:gray;
+}
+
+.search  .back-img img{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    right: 300px;
+}
+
+.mid{
+    margin-top: 40px;
+}
+
+.mid .left{
+    width: 48%;
+    height: 2140px;
+    float: left;
+    margin-left: 200px;
+}
+
+.mid .left .img-list img{
+    width: 100%;
+}
+
+.mid .left .popular-title{
+    margin-top: 20px;
+}
+
+.mid .left .popular-title .speed{
+    font-size: small;
+    color: gray;
+}
+
+.mid .left .singer{
+    margin-top: 10px;
+    border-top: 3px solid green;
+    padding: 20px;
+}
+
+.mid .left .singer {
+   background-color: #f5f7f8;
+}
+
+.mid .left .singer .singer-item{
+    float: left;
+    margin: 8px;
+}
+
+.mid .left .singer .singer-item .singer-img{
+    padding: 5px;
+    border: 1px solid gainsboro;
+    width: 152px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #FFF;
+}
+
+ .mid .left .singer .singer-item .singer-img .singer-tip{
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    height: 30px;
+    width: 30px;
+    background-image: url(../img/playicon.png);
+    background-size: 50px;
+    background-position: 0 -80%;
+    display: inline-block;
+}
+
+
+
+.mid .left .singer .singer-item .singer-img img{
+    width: 140px;
+}
+
+.mid .left .singer .singer-item .singer-name{
+    margin: 10px 0;
+}
+
+.mid .left .singer .singer-item .singer-name a{
+    color: green;
+}
+
+.mid .left .singer .singer-item .singer-name a:hover{
+    color: #fff;
+    background-color: green;
+}
+
+.mid .left .singer .singer-item .singer-kind{
+    color: gray;
+    font-size: small;
+    text-align: center;
+    width: 140px;
+}
+
+.mid .left .new-song{
+    margin-top: 40px;
+    position: relative;
+    border-bottom: 3px solid green;
+    padding-bottom: 4px;
+}
+
+.mid .left .new-song ul{
+    position: absolute;
+    left: 36px;
+    top: -15px;
+}
+
+.mid .left .new-song .more{
+    float: right;
+    color: gray;
+    font-size: small;
+}
+
+.mid .left .new-song ul li{
+    float: left;
+    font-size: small;
+    color: gray;
+}
+
+.mid .left .new-song ul li:first-child{
+    color: green;
+   font-weight: bold;
+}
+
+.mid .left .song-area{
+    background-color: #f5f7f8;
+    padding: 20px;
+}
+
+.mid .left .song-area .song-item{
+    float: left;
+    margin: 10px;
+    width: 140px;
+}
+
+.mid .left .song-area .song-item .song-img img{
+    width: 140px;
+}
+
+.mid .left .song-area .song-item .song-name{
+    color: green;
+    margin: 10px 0;
+}
+
+.mid .left .song-area .song-item .autor{
+    font-size: small;
+    color: gray;
+    margin-bottom: 2px;
+}
+
+.mid .left .song-area .song-item .score .score-img{
+    background-image: url(../img/评分.png);
+    background-repeat: no-repeat;
+    width: 50px;
+    background-position:0 -20px;
+    height: 10px;
+    background-size: 50px;
+    display: inline-block;
+}
+
+.mid .left .song-area .song-item .score .score-num{
+    font-size: small;
+    color: #e09015;
+}
+
+.mid .left .song-list{
+    padding: 20px;
+    background-color: #f5f7f8;
+}
+
+.mid .left .song-list .song-list-item{
+    margin: 10px;
+    float: left;
+    width: 45%;
+    position: relative;
+    background-color: #fff;
+}
+
+.mid .left .song-list .song-list-item img{
+    position: absolute;
+    left: 4px;
+    top: 10px;
+    width: 40px;
+}
+
+.mid .left .song-list .song-list-item .list-right{
+    margin-left: 50px;
+}
+
+.mid .left .song-list .song-list-item .list-right .name{
+    color: green;
+}
+
+.mid .left .song-list .song-list-item .list-right .autor{
+    font-size: small;
+    margin: 15px 0;
+}
+
+.mid .left .song-list .song-list-item .list-right ol{
+    padding-left: 16px;
+}
+
+.mid .right{
+    width: 20%;
+    height: 2000px;
+    float: right;
+    margin-right: 230px;
+    
+}
+
+.mid .right .top-area span{
+    background-color: #f5f7f8;
+    float: left;
+    width: 32%;
+    margin: 0 2px;
+    text-align: center;
+    padding-bottom: 4px;
+}
+
+.mid .right .top-area span .num{
+    color: #139d72;
+    margin: 6px 0;
+    font-weight: bold;
+}
+
+.mid .right .top-area span .kind{
+    color: gray;
+}
+
+.mid .right .top-area .join{
+    background-color: #139d72;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    clear: both;
+    font-size: 16px;
+    border-radius: 3px;
+    height: 40px;
+}
+
+.mid .right .hot-kind{
+    margin: 30px 0;
+}
+
+.mid .right .hot-kind .more{
+    float: right;
+    font-size: small;
+    color: gray;
+}
+
+.mid .right .hot-kind ul li{
+    width: 50%;
+    box-sizing: border-box;
+    color: #139d72;
+    border: 0.5px solid #f5f7f8;
+    float: left;
+    height: 40px;
+    padding-left: 4px;
+    line-height: 40px;
+}
+
+.mid .right .hot-kind ul{
+    padding: 0;
+    margin: 0;
+}
+
+.mid .right .week-list{
+    margin-top: 40px;
+}
+
+.mid .right .week-list .week-head{
+    border-bottom: 1px solid gainsboro;
+    padding: 15px;
+}
+
+.mid .right .week-list .week-head .play{
+    background-color: #139d72;
+    color: #fff;
+    float: right;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: small;
+   
+}
+
+.mid .right .week-list .week-head .play .tr{
+    background-image: url(../img/playicon.png);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-position:100% 14%;
+    background-size: 40px;
+}
+
+.mid .right .week-list ul li{
+    font-size: small;
+    color: gray;
+    float: left;
+}
+
+.mid .right .week-list ul{
+    padding: 0;
+    margin: 6px 16px;
+}
+
+.mid .right .week-list .week-list-item{
+    margin: 10px 0;
+}
+
+.mid .right .week-list .week-list-item span{
+    float: left;
+    margin-left: 20px;
+}
+
+.mid .right .week-list .week-list-item .list-img img{
+    border-radius: 100%;
+}
+
+.mid .right .week-list .week-list-item span.mes .name{
+    color: #139d72;
+    margin-bottom: 4px;
+}
+
+.mid .right .week-list .week-list-item span .tip{
+    font-size: small;
+    color: gray;
+}
+
+.mid .right .week-list .week-list-item .line{
+    font-size: 40px;
+    color: #e8e8e9;
+}
+
+.mid .right .music-250{
+    margin-top: 40px;
+}
+
+.mid .right .music-250 .head-250{
+    border-bottom: 1px solid gainsboro;
+    padding: 5px;
+}
+
+.mid .right .music-250 .head-250 .more{
+    float: right;
+    font-size: small;
+    color: gray;
+}
+
+.mid .right .music-250 .song-area{
+    margin: 20px 0;
+}
+
+.mid .right .music-250 .song-area .song-item{
+    width: 80px;
+    color: #139d72;
+    font-size: small;
+    text-align: center;
+    float: left;
+    margin: 10px 10px;
+}
+
+.mid .right .music-250 .song-area .song-item img{
+    width: 80px;
+}
+
+.mid .right .app{
+    border: 1px solid gainsboro;
+    text-align: center;
+    padding: 20px;
+}
+
+footer{
+    width: 940px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding-bottom: 140px;
+    border-top: 1px dashed gainsboro;
+
+}
+
+footer .left img{
+    height: 15px;
+}
+
+footer div{
+    float: left;
+    width: 420px;
+    margin-top: 10px;
+    font-size: small;
+    color: gray;
+}
+
+footer div.right{
+    margin-left: 100px;
+}
+
+div.pgh{
+    position: fixed;
+    bottom: 10px;
+    right: 0;
+    background-color:skyblue;
+    border-radius: 4px;
+}

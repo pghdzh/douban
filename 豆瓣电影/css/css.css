@@ -1,0 +1,507 @@
+
+a{
+    text-decoration: none;
+    color:#37a
+}
+
+.head a{
+    font-size: small;
+}
+  a:hover{
+    background-color: #37a;
+    color: #fff;
+}
+
+ul li{
+    list-style: none;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+header{
+    margin: 0;
+    padding: 0;
+    height: 26px;
+    line-height: 26px;
+    font-size: small;
+    background-color: #545652;
+    position: relative;
+}
+
+header .nav{
+    margin-left: -30px;
+    margin-top: -10px;
+}
+
+header .nav li{
+    float: left;
+    margin-right:16px;
+} 
+
+header .log{
+    position: absolute;
+    right: 0;
+    bottom: -13px;
+}
+
+header .log li{
+    float: right;
+    margin: 0 10px;
+}
+
+header li,header li a{
+    color: gainsboro;
+}
+
+header li:hover,header a:hover{
+    color: #FFF;
+}
+
+.search{
+    padding:16px 0 ;
+    position: relative;
+    background-color:rgb(226, 240, 240);
+}
+
+.search .top{
+    padding-bottom: 20px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.search .top .title{
+    font-size: 27px;
+    font-weight: bold;
+    color: #37a;
+    margin-left: 200px;
+}
+
+.search .top input{
+    margin-left: 40px;
+    width: 400px;
+    height: 24px;
+    border: none;
+    border-radius: 2px;
+}
+
+.search .top .img{
+    background-image: url(../../豆瓣首页/img/搜索.png);
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 5px 4px;
+    margin-left: -4px;
+    margin-bottom: -8px;
+    background-color: grey;
+    border-radius: 3px;
+}
+
+.search .bottom{
+    margin-left: 170px;
+}
+
+.search .bottom ul li{
+    float: left;
+    margin-right: 20px;
+}
+
+.search .bottom ul li:hover{
+    color: #fff;
+    background-color:brown;
+}
+
+
+.search  .back-img img{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    right: 300px;
+}
+
+.mid{
+    margin:40px 0 ;
+}
+
+.mid .left{
+    float: left;
+    width: 700px;
+    height: 900px;
+    margin: 0 40px 0 200px;
+    
+}
+
+.mid .left .head{
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 10px;
+}
+
+.mid .left .head .title{
+    float: left;
+}
+
+.mid .left .head .title a{
+    margin-left: 10px;
+}
+
+.mid .left .head .page{
+    float:right;
+    font-size: small;
+}
+
+.mid .left .head .page span{
+    margin-right: 10px;
+}
+
+.mid .left .head .page .lt,.mid .left .head .page .gt{
+    margin: 0;
+    background-color: #37a;
+    border-radius: 50%;
+    color: #FFF;
+    padding: 2px;
+}
+
+.mid .left .rymovie{
+    margin-top:20px;
+}
+
+.mid .left .rymovie .movie-area{
+    width: 110px;
+    float: left;
+    margin-right: 30px;
+}
+
+.mid .left .rymovie .movie-area .movie-img img{
+    width: 100px;
+}
+
+.mid .left .rymovie .movie-area .movie-name{
+    margin: 4px 0;
+    text-align: center;
+    width: 100px;
+}
+
+.mid .left .rymovie .movie-area .score{
+    background-image: url(../img/score.png);
+    width: 50px;
+    background-repeat: no-repeat;
+    font-size: small;
+    background-size: 50px;
+    height: 10px;
+    margin-left: 12px;
+    display: inline-block;
+    
+}
+
+.total{
+    height: 270px;
+    width: 700px;
+    overflow: hidden;
+}
+
+#banner{
+    height: 220px;
+    width: 3500px;
+}
+
+ 
+#banner li{
+    float: left;
+    width: 700px;
+    height: 270px;
+    list-style: none;
+}
+
+
+
+.mid .left .rymovie .movie-area .num{
+    color:#e09015;
+    font-size:small
+}
+
+.mid .left .rymovie .movie-area .buy{
+    text-align: center;
+    color: #FFF;
+    background-color: #268dcd;
+    font-size: small;
+    width: 80%;
+    margin-left: 10px;
+    border-radius: 3px ;
+    padding: 3px 0;
+    margin-top: 6px;
+}
+
+.mid .left .hot-movie {
+    margin-top: 40px;
+    padding-bottom: 4px;
+}
+
+.mid .left .hot-movie .hmhead{
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 10px;
+}
+
+.mid .left .hot-movie .hmhead .nav ul li{
+    float: left;
+    margin-right: 10px;
+    font-size: small;
+}
+
+.mid .left .hot-movie .hmhead .nav ul li:first-child{
+    font-size:medium;
+}
+
+.mid .left .hot-movie .hmhead .nav ul{
+    padding: 0;
+}
+
+.mid .left .hot-movie .hmhead .nav ul li a{
+    color: gray;
+}
+
+.mid .left .hot-movie .hmhead .nav ul li a:hover{
+    color: #fff;
+}
+
+.mid .left .hot-movie .hmhead .hmtip{
+    float: right;
+}
+
+.mid .left .hot-movie .hmhead .hmtip a{
+    font-size: small;
+}
+
+.mid .left .hot-movie .hm-movie-area{
+    margin-top: 16px;
+}
+
+.mid .left .hot-movie .hm-movie-area .hm-movie-item{
+    float: left;
+    margin-right: 30px;
+}
+
+.mid .left .hot-movie .hm-movie-area .hm-movie-item .hm-name{
+    font-size: small;
+    width: 110px;
+    text-align: center;
+    margin: 6px 0 20px 0;
+}
+
+.mid .left .hot-movie .hm-movie-area .hm-movie-item .hm-name .name{
+    color: #37a;
+}
+
+.mid .left .hot-movie .hm-movie-area .hm-page{
+    margin-left:240px;
+}
+
+.mid .left .hot-movie .hm-movie-area .hm-page ul li{
+    float: left;
+    width: 5px;
+    height: 5px;
+    background-color: gainsboro;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.mid .left .hot-movie .hm-movie-area .hm-page ul li:first-child,.mid .left .hot-movie .hm-movie-area .hm-page ul li:last-child{
+    background-color: #268dcd;
+    text-align: center;
+    margin-top: -6px;
+    color: #FFF;
+    width: 20px;
+    height: 20px;
+}
+
+
+.slidershow{
+    width: 720px;
+    height: 470px;
+    overflow: hidden;
+}
+
+.middle{
+    position: absolute;
+    top: 110%;
+    left: 38%;
+    transform: translate(-50%,-50%);
+}
+
+.navigation{
+    position: absolute;
+    bottom:0px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar{
+    width: 10px;
+    height: 10px;
+    background-color: gainsboro;
+    border-radius: 50%;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.bar:hover{
+    background-color: #268dcd;
+}
+
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+    margin-left:20px;
+}
+
+.slide{
+    width: 20%;
+    transition: 0.6s;
+}
+
+.slide .hm-movie-area{
+    width: 100%;
+    height: 450px;
+}
+
+#r1:checked ~ .s1{
+    margin-left:0;
+}
+
+#r2:checked ~ .s1{
+    margin-left:-20%;
+}
+
+#r3:checked ~ .s1{
+    margin-left:-40%;
+}
+
+#r4:checked ~ .s1{
+    margin-left:-60%;
+}
+
+#r5:checked ~ .s1{
+    margin-left:-80%;
+}
+
+.mid .right{
+    float: right;
+    width: 350px;
+    height: 900px;
+    margin: 0 140px 0 10px;
+}
+
+.mid .right .rhead{
+    background-color:#eef6fc;
+    padding-top: 18px;
+    font-size: small;
+    padding-left: 20px;
+    width: 300px;
+    height: 36px;
+}
+
+.mid .right .r-title{
+    margin: 20px 0 10px 0;
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 16px;
+}
+
+.mid  .right .r-title a{
+    font-size: small;
+    margin-left: 10px;
+}
+
+.mid .right .r-list ul{
+    padding: 0;
+    margin: 0;
+}
+
+.mid .right .r-list ul li{
+    margin: 10px 0;
+    font-size: small;
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 10px;
+}
+
+.mid .right .r-list ul li::first-letter{
+    margin-right: 4px;
+}
+
+.mid .right .rm-head{
+    margin-top: 40px;
+    font-size:medium;
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 10px;
+}
+
+.mid .right .movie-list{
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.mid .right .movie-list a{
+    font-size: small;
+}
+
+.mid .right .movie-list span{
+    color: grey;
+    font-size: small;
+    margin-left: 260px;
+}
+
+.mid .right .mes{
+    padding: 0;
+    font-size: small;
+}
+
+.mid .right .mes li img{
+    width: 120px;
+    margin-top: 2px;
+}
+
+footer{
+    width: 940px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding-bottom: 140px;
+    border-top: 1px dashed gainsboro;
+
+}
+
+footer .left img{
+    height: 15px;
+}
+
+footer div{
+    float: left;
+    width: 420px;
+    margin-top: 10px;
+    font-size: small;
+    color: gray;
+}
+
+footer div.right{
+    margin-left: 100px;
+}
+
+div.pgh{
+    position: fixed;
+    bottom: 10px;
+    right: 0;
+    background-color:skyblue;
+    border-radius: 4px;
+}

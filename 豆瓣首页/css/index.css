@@ -1,0 +1,781 @@
+header .title ul li{
+    list-style: none;
+    float: left;
+}
+
+header .title ul{
+    display: inline-block;
+    margin: 0; 
+    margin-left: 10px;
+    margin-top:5px ;
+}
+
+
+header .title ul li:nth-child(3n+1){
+    color: rgb(16, 138, 16);
+}
+
+header .title ul li:nth-child(3n+2){
+    color: rgb(64, 169, 196);
+}
+
+header .title ul li:nth-child(3n+3){
+    color: rgb(240, 228, 65);
+}
+
+header .title span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    color: rgb(18, 143, 18);
+    font-weight: bold;
+}
+
+header .title{
+    font-size: 20px;
+    background-color: rgb(228, 236, 228);
+    margin: 0;
+    position: relative;
+    height: 30px;
+}
+
+header .nav span.title{
+    margin-left: 200px;
+    height:100px ;
+    line-height: 100px;
+    color: rgb(18, 143, 18);
+    font-size: 30px;
+    background-color: #FFF;
+}
+
+header .nav input{
+    height: 26px;
+    width: 280px;
+   
+    border: none;
+}
+
+header .nav .search{
+    border: 1px solid gray;
+    margin: 0 20px;
+    width: 200px;
+    height: 40px;
+    padding: 4px;
+    padding-bottom: 6px;
+    position: relative;
+}
+
+header .nav .search .search-img{
+    width: 30px;
+    height: 30px;
+    position:absolute;
+    bottom: -4px;
+    right: 0;
+    background-size: 16px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../img/搜索.png);
+}
+
+
+
+header .nav ul li{
+    list-style: none;
+    float: left;
+    margin:0 7px;
+   
+}
+
+header .nav ul li a{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header .nav ul li a:hover{
+    background-color: #FFF;
+}
+
+header .nav ul{
+    margin-left: 700px;
+    font-size: 20px;
+    position: absolute;
+    right: 200px;
+    top: 20px;
+    font-weight: bold;
+}
+
+header .nav{
+    
+    height: 100px;
+    position: relative;
+}
+
+.log{
+    background-image: url(../img/1771365ca98ig9er706.jpg) ;
+    height: 340px;
+    background-size: 800px 340px;
+    background-repeat: no-repeat;
+    background-color: rgb(228, 236, 228);
+    position: relative;
+}
+
+.log  .mid{
+    display: inline-block;
+    margin: 120px 0;
+    margin-left: 750px;
+    position: relative;
+}
+
+.log .mid span{
+    font-size: 24px;
+}
+
+.log .mid div{
+    margin-top: 20px;
+}
+
+.log .mid div button{
+    background-color: rgb(18, 143, 18);
+    color: #FFF;
+    border-radius: 3px;
+    border: none;
+    height: 35px;
+    padding: 0 15px;
+}
+
+.log .mid div div.download:hover div.code{
+    display: block;
+}
+
+.log .mid div div.download img{
+    height: 35px;
+   position: absolute;
+   right: -38px;
+   bottom: 20px;
+}
+
+.code{
+    position: absolute;
+    width: 180px;
+    height: 200px;
+    background-color: #FFF;
+    padding: 20px;
+    left: 110px;
+    top: 33px;
+    display: none;
+    z-index: 1;
+}
+
+.log .mid .download .code span{
+    font-size: medium;
+    bottom: 0;
+    left: 30px;
+    position:absolute;
+    color: gray;
+}
+
+.log .mid .download .code img{
+    width: 180px;
+    height: 190px;
+    margin:auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    
+}
+
+.log .right{
+    height: 340px;
+    position: absolute;
+    top: 0;
+    right: 280px;
+}
+
+.log .right .header{
+    margin-top:24px ;
+    
+}
+
+.log .right span{
+    margin-left:50px;
+    padding: 3px 10px;
+    font-size: small;
+}
+
+.log .right .head-left{
+    border-bottom: 1px solid #000;
+    font-weight: bold;
+}
+
+.log .right .head-right{
+    color: gray
+}
+
+.log .left{
+    margin: 10px;
+}
+
+.log .left span{
+    margin: 0;
+    padding: 0;
+    color: gray;
+}
+
+.log .left .tip a{
+    margin: 0;
+    text-decoration: none;
+    font-size: small;
+    color: rgb(18, 143, 18);
+}
+
+.log .left .phone{
+    margin: 10px;
+    border: 1px solid gainsboro;
+    height: 26px;
+    border-radius: 3px;
+    background-color: #fff;
+} 
+
+.log .left .phone span{
+    font-weight: bold;
+    color: #000;
+    border-right: 1px solid gainsboro;
+    height: 26px;
+    line-height: 26px;
+    margin-left: 7px;
+    padding-right: 4px;
+}
+
+.log .left .phone input{
+    border: none;
+    width: 230px;
+}
+
+ input:focus{
+    outline: none;
+}
+
+.log .left .verify{
+    border: 1px solid gainsboro;
+    margin-left: 10px;
+    height: 26px;
+    border-radius: 3px;
+    width: 278px;
+    background-color: #fff;
+}
+
+.log .left .verify input{
+    border: none;
+}
+
+.log .left .verify a{
+    text-decoration: none;
+    color: rgb(18, 143, 18);
+    margin-left: 30px;
+    font-size: small;
+}
+
+.log .left .button{
+    margin: 10px;
+}
+
+.log .left .button button{
+    color: #fff;
+    background-color: rgba(18, 143, 18,0.5);
+    border: none;
+    border-radius: 3px;
+    width: 278px;
+    height: 36px;
+}
+
+.log .left .tip2{
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 10px;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.log .left .tip2 span{
+    float: right;
+    color: rgb(18, 143, 18);
+}
+
+.log .left .else p{
+    color: gray;
+}
+
+.hotpot{
+    margin-top:50px;
+    position: relative;
+}
+
+.hotpot .left{
+    margin-left: 200px;
+    width: 400px;
+    display: inline-block;
+   
+}
+
+.hotpot .left span.rd{
+    color: rgb(18, 143, 18);
+}
+
+ .point{
+    letter-spacing: 10px;
+}
+
+.hotpot  a{
+    text-decoration: none;
+    color: cornflowerblue;
+    font-size: small;
+}
+
+.hotpot  a:hover{
+    color: #FFF;
+    background-color:darkblue;
+}
+
+.hotpot .left .photo-item{
+    float: left;
+    margin: 10px;
+}
+
+.hotpot .left .photo-item span{
+    color: gray;
+    font-size: small;
+    margin-left: 4px;
+}
+
+.hotpot .mid{
+    width: 300px;
+    position: absolute;
+    left: 600px;
+    top: 0;
+    margin-top: 28px;
+}
+
+.hotpot .mid .title{
+    font-size: small;
+    color: silver;
+}
+
+.hotpot .mid p{
+    margin-top: 3px;
+    font-size: small;
+    color: gray;
+}
+
+.hotpot .right {
+    position: absolute;
+    top: 0;
+    left: 950px;
+}
+
+.hotpot .right .adv{
+    position: relative;
+}
+
+.hotpot .right .adv img{
+    width: 300px;
+}
+
+.hotpot .right .adv span{
+    position: absolute;
+    bottom: 4px;
+    right: 0;
+    color: #fff;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.hotpot .right .head{
+    margin-top: 10px;
+}
+
+.hotpot .right .rm{
+    color: rgb(18, 143, 18);
+}
+
+.hotpot .right .title-item a{
+    font-size: medium;
+}
+
+.hotpot .right .title-item  .num{
+    color: gray;
+    font-size: small;
+}
+
+.time{
+    background-color:#f7f7f7;
+    margin-top: 100px;
+    padding-bottom: 80px;
+    
+}
+
+.time .head{
+    margin-top: 40px;
+    margin-left:200px ;
+}
+
+.time .head .title{
+    margin-right: 15px;
+    font-size:26px;
+}
+
+.time .head{
+    padding-top: 30px;
+}
+
+.time .head .rm{
+    color: rgb(18, 143, 18);
+}
+
+  a{
+    text-decoration: none;
+    color: cornflowerblue;
+    font-size: small;
+}
+
+  a:hover{
+    color: #FFF;
+    background-color:darkblue;
+}
+
+.time .item-area{
+    margin-left: 300px;
+    margin-top: 10px;
+    width: 700px;
+}
+
+.time .item{
+    float: left;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.time .item .img{
+    position: relative;
+}
+
+.time .item .img .ear{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.time .item .img img{
+    width: 100px;
+}
+
+.time .item .book{
+    width: 100px;
+    margin-top: 10px;
+    font-size: small;
+}
+
+.time .item .page{
+    color: gray;
+    margin-top: 10px;
+    font-size: small;
+}
+
+.movie{
+    margin-top: 40px;
+    position: relative;
+   
+}
+
+.movie .left{
+    margin-left:160px ;
+}
+
+.movie .left span{
+    margin-bottom: 30px;
+    margin-left: 36px;
+}
+
+.movie .left span a{
+    font-size: 30px;
+}
+
+.movie .left ul li{
+    list-style: none;
+    margin:4px
+}
+
+.movie .mid{
+    position: absolute;
+    top:0;
+    left: 300px;
+    margin-top: 10px;
+}
+
+.movie .mid .movie-item .movie{
+    margin-top: 10px;
+    position: static;
+}
+
+.movie .mid .head .ry{
+    color: rgb(18, 143, 18);
+}
+
+.movie .mid{
+    width: 800px;
+}
+
+.movie .mid .movie-item{
+    float: left;
+    margin-right: 30px;
+}
+
+.movie .mid .movie-item .name{
+    margin: 5px 0;
+    margin-left: 40px;
+}
+
+.movie .mid .movie-item .name a{
+    color: #000;
+}
+
+.movie .mid .movie-item .name a:hover{
+    color: #fff;
+}
+
+.movie .mid .movie-item .score{
+   text-align: center;
+}
+
+.movie .mid .movie-item .score .img{
+    height: 11px;
+    width: 55px;
+    background-image: url(../img/评分.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.movie .mid .movie-item .score span.num{
+    margin-bottom: 5px;
+    color: rgb(244,144,21);
+    font-size: small;
+}
+
+.movie .mid .movie-item .buy{
+    margin: 5px;
+    background-color:royalblue;
+    color: #fff;
+    border-radius: 3px;
+    font-size: small;
+    width: 65px;
+    height: 22px;
+    margin: 5px auto;
+    padding-top:5px ;
+    padding-left: 7px;
+}
+
+.movie .right{
+    position: absolute;
+    left: 980px;
+    top: 0;
+    padding-top: 10px;
+}
+
+.movie .right .head .kind{
+    color: rgb(18, 143, 18);
+}
+
+.movie .right .kinds{
+    width: 260px;
+}
+
+.movie .right .kinds ul{
+    margin: 10px 0;
+    padding: 0;
+}
+
+.movie .right .kinds ul li{
+    list-style: none;
+    float: left;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.headline{
+    color: rgb(18, 143, 18);
+}
+
+.movie .right .mid-head{
+    margin-top: 30px;
+}
+
+.movie .right .list ol li{
+    font-size: small;
+    margin: 3px 0;
+    border-bottom: 1px solid gainsboro ;
+    padding-bottom: 10px;
+}
+
+ol li::first-letter{
+    margin-left: 4px;
+}
+
+.read-book{
+    background-color: #f7f7f7;
+    margin-top: 400px;
+    padding-top: 40px;
+    position: relative;
+    height: 700px;
+}
+
+.read-book a{
+    color:rgb(97,78,90);
+}
+
+.read-book a:hover{
+    color: #FFF;
+}
+
+.read-book .left{
+    margin-left: 160px;
+}
+
+.read-book .left .list ul{
+    margin: 10px 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.read-book .left .title{
+    font-size: 35px;
+}
+
+.read-book .left .list ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.read-book .left .list li.active{
+    position: relative;
+}
+
+.read-book .left .list ul li.active img{
+    position: absolute;
+    top: 5px;
+    right: -17px;
+}
+
+.read-book .left .ico {
+    background-image: url(../img/app_icons_50_10.jpg);
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
+
+.read-book .mid{
+    position: absolute;
+    top: 50px;
+    left: 300px;
+}
+
+.read-book .mid .book-item{
+    margin: 15px ;
+    font-size: small;
+}
+
+.read-book .mid .book-item .img img{
+    width: 120px;
+}
+
+.read-book .mid .book-item{
+    float: left;
+    margin-bottom: 30px;
+}
+
+.read-book .mid .book-item .name{
+    color: gray;
+    font-size: small;
+    margin: 10px;
+}
+
+.read-book .mid .book-item .author{
+    margin-left: 30px;
+}
+
+.read-book .mid .book-item .kind{
+    background-color: gray;
+    width:55px;
+    margin-left:20px;
+    padding: 4px;
+    margin-top: 4px;
+    border-radius: 4px;
+    color: #FFF;
+}
+
+.read-book .right{
+    position: absolute;
+    left: 950px;
+    top: 50px;
+}
+
+.read-book .right .kinds-list{
+    padding: 15px 0;
+    width: 400px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.read-book .right .kinds-list span{
+    font-size: small;
+    color: gray;
+    display: inline-block;
+}
+
+.kinds-list ul{
+    margin: 0;
+    padding: 0;
+}
+
+.read-book .right .kinds-list ul li {
+    float: left;
+    list-style: none;
+    margin: 0 10px;
+}
+
+footer{
+    width: 940px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding-bottom: 140px;
+    border-top: 1px dashed gainsboro;
+
+}
+
+footer .left img{
+    height: 15px;
+}
+
+footer div{
+    float: left;
+    width: 420px;
+    margin-top: 10px;
+    font-size: small;
+    color: gray;
+}
+
+footer div.right{
+    margin-left: 100px;
+}
+
+div.pgh{
+    position: fixed;
+    bottom: 10px;
+    right: 0;
+    background-color:skyblue;
+    border-radius: 4px;
+}

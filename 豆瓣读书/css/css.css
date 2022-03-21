@@ -1,0 +1,363 @@
+
+a{
+    text-decoration: none;
+    color:#37a
+}
+
+.head a{
+    font-size: small;
+}
+  a:hover{
+    background-color: #37a;
+    color: #fff;
+}
+
+ul li{
+    list-style: none;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+header{
+    margin: 0;
+    padding: 0;
+    height: 26px;
+    line-height: 26px;
+    font-size: small;
+    background-color: #545652;
+    position: relative;
+}
+
+header .nav{
+    margin-left: -30px;
+    margin-top: -10px;
+}
+
+header .nav li{
+    float: left;
+    margin-right:16px;
+} 
+
+header .log{
+    position: absolute;
+    right: 0;
+    bottom: -13px;
+}
+
+header .log li{
+    float: right;
+    margin: 0 10px;
+}
+
+header li,header li a{
+    color: gainsboro;
+}
+
+header li:hover,header a:hover{
+    color: #FFF;
+}
+
+.search{
+    padding:16px 0 ;
+    position: relative;
+    background-color:rgb(238, 233, 227);
+}
+
+.search .top{
+    padding-bottom: 20px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.search .top .title{
+    font-size: 27px;
+    font-weight: bold;
+    color: saddlebrown;
+    margin-left: 200px;
+}
+
+.search .top input{
+    margin-left: 40px;
+    width: 400px;
+    height: 24px;
+    border: none;
+    border-radius: 2px;
+}
+
+.search .top .img{
+    background-image: url(../../豆瓣首页/img/搜索.png);
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 5px 4px;
+    margin-left: -4px;
+    margin-bottom: -8px;
+    background-color: grey;
+    border-radius: 3px;
+}
+
+.search .bottom{
+    margin-left: 170px;
+}
+
+.search .bottom ul li{
+    float: left;
+    margin-right: 20px;
+}
+
+.search .bottom ul li:hover{
+    color: #fff;
+    background-color:brown;
+}
+
+.search .bottom ul li.img{
+    background-image: url(../img/购物车.png);
+    background-repeat: no-repeat;
+    background-position: 0 3px;
+    padding-left: 17px;
+}
+
+.search  .back-img img{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    right: 300px;
+}
+
+div.adv{
+    position: relative;
+    text-align: center;
+}
+
+div.adv span{
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+    color: #fff;
+    background-color: rgba(128, 128, 128, 0.6);
+    padding: 3px;
+}
+
+.left{
+    float: left;
+    width: 700px;
+    margin-left: 200px;
+    margin-top: 20px;
+    
+}
+
+.left .head{
+    border-bottom: 1px solid gainsboro;
+    position: relative;
+    padding-bottom: 6px;
+}
+
+.left .head .title{
+    font-size: large;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.left .head .point{
+    position: absolute;
+    right: 30px;
+    top: 0;
+}
+
+.left .head .point li,.left .head .nav-lr{
+    float: right;
+}
+
+.left .head .point li{
+    height: 5px;
+    width: 5px;
+    background-color:gainsboro;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.left .head .point li:last-child{
+    background-color: gray;
+}
+
+.left .head .nav-lr{
+    margin-top: 7px;
+}
+
+.left .head .nav-lr span{
+    color: #fff;
+    background-color: gray;
+    border-radius:50%;
+    text-align: center;
+    font-size: small;
+    margin-left:5px ;
+}
+
+.left .book-area {
+    margin-top: 10px;
+   
+}
+
+.left .book-area .book-item{
+    float: left;
+    margin-right: 30px;
+}
+
+.left .book-area .book-item .book-img img{
+    width: 110px;
+}
+
+.left .book-area .book-item .autor{
+    font-size: small;
+    margin-bottom: 40px;
+}
+
+.left .book-area .book-item .book-name{
+    margin: 2px 0;
+    
+}
+
+.left .adv span{
+    right: 13px;
+    bottom: 4px;
+}
+
+.left .message{
+    border: 1px solid gainsboro;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.left .message .title{
+    color: #37a;
+    margin: 0;
+}
+
+.left .message .kind{
+    color: gray;
+    font-size: small;
+    margin: 6px 0;
+}
+
+.left .message .word{
+    margin: 0;
+    font-size: small;
+    line-height: 1.5em;
+}
+
+.left .message .mes-img{
+    width: 60px;
+    float: right;
+    margin-left: 18px;
+}
+
+.right{
+    float: right;
+    width: 300px;
+    height: 400px;
+    margin-right: 200px;
+    margin-top: 20px;
+}
+
+.right .head .title{
+    font-weight: bold;
+}
+
+.right .head{
+    border-bottom:1px solid gainsboro ;
+    padding-bottom: 5px;
+}
+
+.right .label{
+    margin-bottom: 20px;
+    border-bottom: dashed 1px gainsboro;
+}
+
+.right .label ul li{
+    float: left;
+    margin-right:10px ;
+    background-color: gainsboro;
+    margin-bottom: 10px;
+    padding: 4px;
+    font-size: small;
+}
+
+
+
+.right .label ul li:hover,.right .label ul li a:hover{
+    background-color: rgb(197, 197, 197);
+    color: #37a;
+}
+
+.right .label ul{
+    margin-left:-40px;
+    margin-top: 0;
+}
+
+.right .sale-book{
+    font-size: large;
+    font-weight: bold;
+    border-bottom: 1px solid gainsboro;
+}
+
+.right .book-area2 .book-item{
+    border-bottom: 1px dashed gainsboro;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.right .book-area2 .book-item .sale{
+    float: right;
+    font-size: small;
+    margin-top:10px ;
+    color: gray;
+    padding: 5px 10px;
+}
+
+.right .book-area2 .book-item .autor{
+    font-size: small;
+    margin-top: 5px;
+    margin-left: 20px;
+    color: gray;
+}
+
+.right .book-area2 .book-item:hover{
+    background-color:rgba(233, 218, 202, 0.2);
+}
+
+.right .book-area2 .book-item:hover .sale{
+    border: 1px solid rgb(233, 218, 202);
+    color: rgb(233, 218, 202);
+    padding: 5px 10px;
+    box-sizing:border-box;
+}
+
+.foot-left{
+    position:absolute;
+    bottom: -1100px;
+    left: 160px;
+    font-size: small;
+    color: gray;
+    border-bottom: 1px dashed gainsboro;
+}
+
+.foot-right{
+    position: absolute;
+    bottom: -1100px;
+    left: 700px;
+    font-size: small;
+}
+
+div.pgh{
+    position: fixed;
+    bottom: 10px;
+    right: 0;
+    background-color:skyblue;
+    border-radius: 4px;
+}

@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原创作品 | 豆瓣阅读</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="top-nav">
+        <div class="title">
+            <div class="icon">
+                <img src="./favicon.ico" alt="">
+                豆瓣阅读
+            </div>
+            <div class="tip">
+                优质类型小说平台
+            </div>
+        </div>
+
+        <div class="kinds">
+            分类
+        </div>
+
+        <div class="search">
+            <img src="./img/搜索.png" alt="">
+            搜索
+        </div>
+
+        <ul class="nav clearfix">
+            <li class="active1">
+                原创
+                <div class="list-nav">
+                    <ul>
+                        <li>类型1</li>
+                        <li>类型2</li>
+                        <li>类型3</li>
+                        <li>类型4</li>
+                        <li>类型5</li>
+                        <li>类型6</li>
+                        <li>类型7</li>
+                    </ul>
+                </div>
+            </li>
+            <li>排行</li>
+            <li>出版</li>
+            <li>会员</li>
+            <li>App</li>
+        </ul>
+
+        <div class="become">
+            成为作者
+        </div>
+
+        <div class="log">
+            登录
+        </div>
+
+        <div class="reg">
+            注册
+        </div>
+    </div>
+
+    <header>
+    </header>
+
+    <div class="header">
+        <div class="total">
+            <ul id="banner">
+               <li>青斜文艺小说《乌合之众》成功签约出版</li>
+               <li>茅庐小生作品《两晋：纷争的乱世》出版上市</li>
+               <li>吴图作品《舌尖上的名侦探》售出影视改编权</li>
+               <li>鹿迢迢作品《虞美人不开的夏天》售出影视改编权</li>
+               <li>李薄茧作品《九义人》售出影视改编权</li>
+            </ul>
+        </div>
+    
+        <script>
+            var curindex = 0;
+            var maxlen = document.getElementById("banner").getElementsByTagName("li").length-1
+            var timer = null
+            timer = setInterval(change_auto,3000)
+    
+            function change_auto(){
+                if(curindex < maxlen){
+                    curindex++;
+                    get_next();
+                }
+                else{
+                    curindex=0;
+                    get_reset()
+                }
+            }
+    
+            var height = 40
+    
+            function get_next(){
+                var totalbanner = document.getElementById("banner")
+                totalbanner.style.marginTop = "-" + height*curindex+"px"
+                totalbanner.style.transition = 0.3 + "s"
+            }
+    
+            function get_reset(){
+                var totalbanner = document.getElementById("banner")
+                totalbanner.style.marginTop = "0px"
+                totalbanner.style.transition = "0s"
+            }
+        </script>
+
+        <ul class="item clearfix">
+            <li>作者福利</li>
+            <li>出版与改编</li>
+            <li>征文专区</li>
+            <li><img src="./img/进行中.png" alt="">长篇拉力赛</li>
+        </ul>
+
+        <div class="big-nav">
+            <ul class="clearfix">
+                <li>完本频道</li>
+                <li>悬疑频道</li>
+                <li>女性频道</li>
+                <li>幻想频道</li>
+                <li>文艺频道</li>
+                <li>历史频道</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="recommend clearfix">
+        <div class="title">
+            重磅推荐
+        </div>
+
+        <div class="book-area">
+            <div class="book-item clearfix">
+                <img src="./img/封面.png" alt="">
+                <div class="book">
+                    <div class="book-name">
+                        书名
+                    </div>
+                    <div class="autor">
+                        作者
+                    </div>
+                    <div class="intor">
+                        简介
+                    </div>
+                    <div class="label">
+                        <ul>
+                            <li>标签1</li>
+                            <li>标签2</li>
+                            <li>标签3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="book-item clearfix">
+                <img src="./img/封面.png" alt="">
+                <div class="book">
+                    <div class="book-name">
+                        书名
+                    </div>
+                    <div class="autor">
+                        作者
+                    </div>
+                    <div class="intor">
+                        简介
+                    </div>
+                    <div class="label">
+                        <ul>
+                            <li>标签1</li>
+                            <li>标签2</li>
+                            <li>标签3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="book-item clearfix">
+                <img src="./img/封面.png" alt="">
+                <div class="book">
+                    <div class="book-name">
+                        书名
+                    </div>
+                    <div class="autor">
+                        作者
+                    </div>
+                    <div class="intor">
+                        简介
+                    </div>
+                    <div class="label">
+                        <ul>
+                            <li>标签1</li>
+                            <li>标签2</li>
+                            <li>标签3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="book-item clearfix">
+                <img src="./img/封面.png" alt="">
+                <div class="book">
+                    <div class="book-name">
+                        书名
+                    </div>
+                    <div class="autor">
+                        作者
+                    </div>
+                    <div class="intor">
+                        简介
+                    </div>
+                    <div class="label">
+                        <ul>
+                            <li>标签1</li>
+                            <li>标签2</li>
+                            <li>标签3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="greater">
+            &gt;
+        </div>
+
+        <div class="small">
+            &lt;
+        </div>
+    </div>
+
+    <div class="mid">
+        <div class="popular">
+            <div class="title">
+                畅销作品
+            </div>
+            <div class="book-area clearfix">
+                <div class="book-item">
+                    <div class="book-img">
+                        <img src="./img/封面.png" alt="">
+                    </div>
+                    <div class="book-name">
+                        书名
+                    </div>
+                    <div class="autor">
+                        作者
+                    </div>
+                    <div class="book-intor">
+                        简介
+                    </div>
+                    <div class="score">
+                        <ul>
+                            <li style="color: #fa595f;">评分 </li>
+                            <li>| 标签1 </li>
+                            <li>| 标签2</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="book-item">
+                    <div class="book-img">
+                        <img src="./img/封面.png" alt="">
+                    </div>
+                    <div class="book-name">
+                        书名
+                    </div>
+                    <div class="autor">
+                        作者
+                    </div>
+                    <div class="book-intor">
+                        简介
+                    </div>
+                    <div class="score">
+                        <ul>
+                            <li style="color: #fa595f;">评分 </li>
+                            <li>| 标签1 </li>
+                            <li>| 标签2</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="book-item">
+                    <div class="book-img">
+                        <img src="./img/封面.png" alt="">
+                    </div>
+                    <div class="book-name">
+                        书名
+                    </div>
+                    <div class="autor">
+                        作者
+                    </div>
+                    <div class="book-intor">
+                        简介
+                    </div>
+                    <div class="score">
+                        <ul>
+                            <li style="color: #fa595f;">评分 </li>
+                            <li>| 标签1 </li>
+                            <li>| 标签2</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="book-item">
+                    <div class="book-img">
+                        <img src="./img/封面.png" alt="">
+                    </div>
+                    <div class="book-name">
+                        书名
+                    </div>
+                    <div class="autor">
+                        作者
+                    </div>
+                    <div class="book-intor">
+                        简介
+                    </div>
+                    <div class="score">
+                        <ul>
+                            <li style="color: #fa595f;">评分 </li>
+                            <li>| 标签1 </li>
+                            <li>| 标签2</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="book-item">
+                    <div class="book-img">
+                        <img src="./img/封面.png" alt="">
+                    </div>
+                    <div class="book-name">
+                        书名
+                    </div>
+                    <div class="autor">
+                        作者
+                    </div>
+                    <div class="book-intor">
+                        简介
+                    </div>
+                    <div class="score">
+                        <ul>
+                            <li style="color: #fa595f;">评分 </li>
+                            <li>| 标签1 </li>
+                            <li>| 标签2</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popular">
+            <div class="title">
+                每周精品
+            </div>
+            <div class="book-area clearfix">
+                <div class="book-item">
+                    <div class="book-img">
+                        <img src="./img/封面.png" alt="">
+                    </div>
+                    <div class="book-name">
+                        书名
+                    </div>
+                    <div class="autor">
+                        作者
+                    </div>
+                    <div class="book-intor">
+                        简介
+                    </div>
+                    <div class="score">
+                        <ul>
+                            <li style="color: #fa595f;">评分 </li>
+                            <li>| 标签1 </li>
+                            <li>| 标签2</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="book-item">
+                    <div class="book-img">
+                        <img src="./img/封面.png" alt="">
+                    </div>
+                    <div class="book-name">
+                        书名
+                    </div>
+                    <div class="autor">
+                        作者
+                    </div>
+                    <div class="book-intor">
+                        简介
+                    </div>
+                    <div class="score">
+                        <ul>
+                            <li style="color: #fa595f;">评分 </li>
+                            <li>| 标签1 </li>
+                            <li>| 标签2</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="book-item">
+                    <div class="book-img">
+                        <img src="./img/封面.png" alt="">
+                    </div>
+                    <div class="book-name">
+                        书名
+                    </div>
+                    <div class="autor">
+                        作者
+                    </div>
+                    <div class="book-intor">
+                        简介
+                    </div>
+                    <div class="score">
+                        <ul>
+                            <li style="color: #fa595f;">评分 </li>
+                            <li>| 标签1 </li>
+                            <li>| 标签2</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="book-item">
+                    <div class="book-img">
+                        <img src="./img/封面.png" alt="">
+                    </div>
+                    <div class="book-name">
+                        书名
+                    </div>
+                    <div class="autor">
+                        作者
+                    </div>
+                    <div class="book-intor">
+                        简介
+                    </div>
+                    <div class="score">
+                        <ul>
+                            <li style="color: #fa595f;">评分 </li>
+                            <li>| 标签1 </li>
+                            <li>| 标签2</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="book-item">
+                    <div class="book-img">
+                        <img src="./img/封面.png" alt="">
+                    </div>
+                    <div class="book-name">
+                        书名
+                    </div>
+                    <div class="autor">
+                        作者
+                    </div>
+                    <div class="book-intor">
+                        简介
+                    </div>
+                    <div class="score">
+                        <ul>
+                            <li style="color: #fa595f;">评分 </li>
+                            <li>| 标签1 </li>
+                            <li>| 标签2</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popular">
+            <div class="title">
+                签约新作
+            </div>
+            <div class="book-area clearfix">
+                <div class="book-item">
+                    <div class="book-img">
+                        <img src="./img/封面.png" alt="">
+                    </div>
+                    <div class="book-name">
+                        书名
+                    </div>
+                    <div class="autor">
+                        作者
+                    </div>
+                    <div class="book-intor">
+                        简介
+                    </div>
+                    <div class="score">
+                        <ul>
+                            <li style="color: #fa595f;">评分 </li>
+                            <li>| 标签1 </li>
+                            <li>| 标签2</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="book-item">
+                    <div class="book-img">
+                        <img src="./img/封面.png" alt="">
+                    </div>
+                    <div class="book-name">
+                        书名
+                    </div>
+                    <div class="autor">
+                        作者
+                    </div>
+                    <div class="book-intor">
+                        简介
+                    </div>
+                    <div class="score">
+                        <ul>
+                            <li style="color: #fa595f;">评分 </li>
+                            <li>| 标签1 </li>
+                            <li>| 标签2</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="book-item">
+                    <div class="book-img">
+                        <img src="./img/封面.png" alt="">
+                    </div>
+                    <div class="book-name">
+                        书名
+                    </div>
+                    <div class="autor">
+                        作者
+                    </div>
+                    <div class="book-intor">
+                        简介
+                    </div>
+                    <div class="score">
+                        <ul>
+                            <li style="color: #fa595f;">评分 </li>
+                            <li>| 标签1 </li>
+                            <li>| 标签2</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="book-item">
+                    <div class="book-img">
+                        <img src="./img/封面.png" alt="">
+                    </div>
+                    <div class="book-name">
+                        书名
+                    </div>
+                    <div class="autor">
+                        作者
+                    </div>
+                    <div class="book-intor">
+                        简介
+                    </div>
+                    <div class="score">
+                        <ul>
+                            <li style="color: #fa595f;">评分 </li>
+                            <li>| 标签1 </li>
+                            <li>| 标签2</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="book-item">
+                    <div class="book-img">
+                        <img src="./img/封面.png" alt="">
+                    </div>
+                    <div class="book-name">
+                        书名
+                    </div>
+                    <div class="autor">
+                        作者
+                    </div>
+                    <div class="book-intor">
+                        简介
+                    </div>
+                    <div class="score">
+                        <ul>
+                            <li style="color: #fa595f;">评分 </li>
+                            <li>| 标签1 </li>
+                            <li>| 标签2</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="attention-list">
+            <span style="color: #389eac;">长篇拉力赛</span>
+            <span style="color: gainsboro;">关注名单</span>
+            <div class="more">查看更多</div>
+        </div>
+
+        <div class="group-woman">
+            <span class="title">
+                女性组
+            </span>
+            <div class="book-area clearfix">
+                <div class="book-item">
+                    <img src="./img/关于我爱的人.jpg" alt="">
+                    <div class="book-name">
+                        关于我爱的人
+                    </div>
+                    <div class="num">
+                        票数
+                    </div>
+                </div>
+                <div class="book-item">
+                    <img src="./img/关于我爱的人.jpg" alt="">
+                    <div class="book-name">
+                        关于我爱的人
+                    </div>
+                    <div class="num">
+                        票数
+                    </div>
+                </div>
+                <div class="book-item">
+                    <img src="./img/关于我爱的人.jpg" alt="">
+                    <div class="book-name">
+                        关于我爱的人
+                    </div>
+                    <div class="num">
+                        票数
+                    </div>
+                </div>
+                <div class="book-item">
+                    <img src="./img/关于我爱的人.jpg" alt="">
+                    <div class="book-name">
+                        关于我爱的人
+                    </div>
+                    <div class="num">
+                        票数
+                    </div>
+                </div>
+                <div class="book-item">
+                    <img src="./img/关于我爱的人.jpg" alt="">
+                    <div class="book-name">
+                        关于我爱的人
+                    </div>
+                    <div class="num">
+                        票数
+                    </div>
+                </div>
+                <div class="book-item">
+                    <img src="./img/关于我爱的人.jpg" alt="">
+                    <div class="book-name">
+                        关于我爱的人
+                    </div>
+                    <div class="num">
+                        票数
+                    </div>
+                </div>
+                <div class="book-item">
+                    <img src="./img/关于我爱的人.jpg" alt="">
+                    <div class="book-name">
+                        关于我爱的人
+                    </div>
+                    <div class="num">
+                        票数
+                    </div>
+                </div>
+                <div class="book-item">
+                    <img src="./img/关于我爱的人.jpg" alt="">
+                    <div class="book-name">
+                        关于我爱的人
+                    </div>
+                    <div class="num">
+                        票数
+                    </div>
+                </div>
+                <div class="book-item">
+                    <img src="./img/关于我爱的人.jpg" alt="">
+                    <div class="book-name">
+                        关于我爱的人
+                    </div>
+                    <div class="num">
+                        票数
+                    </div>
+                </div>
+                <div class="book-item">
+                    <img src="./img/关于我爱的人.jpg" alt="">
+                    <div class="book-name">
+                        关于我爱的人
+                    </div>
+                    <div class="num">
+                        票数
+                    </div>
+                </div>
+                <div class="book-item">
+                    <img src="./img/关于我爱的人.jpg" alt="">
+                    <div class="book-name">
+                        关于我爱的人
+                    </div>
+                    <div class="num">
+                        票数
+                    </div>
+                </div>
+                <div class="book-item">
+                    <img src="./img/关于我爱的人.jpg" alt="">
+                    <div class="book-name">
+                        关于我爱的人
+                    </div>
+                    <div class="num">
+                        票数
+                    </div>
+                </div>
+                <div class="book-item">
+                    <img src="./img/关于我爱的人.jpg" alt="">
+                    <div class="book-name">
+                        关于我爱的人
+                    </div>
+                    <div class="num">
+                        票数
+                    </div>
+                </div>
+                <div class="book-item">
+                    <img src="./img/关于我爱的人.jpg" alt="">
+                    <div class="book-name">
+                        关于我爱的人
+                    </div>
+                    <div class="num">
+                        票数
+                    </div>
+                </div>
+                <div class="book-item">
+                    <img src="./img/关于我爱的人.jpg" alt="">
+                    <div class="book-name">
+                        关于我爱的人
+                    </div>
+                    <div class="num">
+                        票数
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="rank">
+        <span class="title">
+            排行
+        </span>
+        <span class="more">
+            查看更多
+        </span>
+
+        <div class="rank-area clearfix">
+            <div class="rank-item clearfix">
+                <div class="rank-name">
+                    连载榜
+                </div>
+                <div class="rank-intor">
+                    作品三日内有更新，按周热度排行
+                </div>
+                <ul class="rank-list">
+                    <li class="active">
+                        <span class="num">1</span>
+                        <div class="book-mid">
+                            <div class="book-name">
+                                书名
+                            </div>
+                            <div class="autor">
+                                作者
+                            </div>
+                            <div class="kinds">
+                                类型1 | 类型2
+                            </div>
+                        </div>
+                        <img src="./img/封面.png" alt="">
+                    </li>
+                    <li><span class="num">1</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">2</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">3</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">4</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">5</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">6</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">7</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">8</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">9</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">10</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                </ul>
+                <span class="check">
+                    查看详情
+                </span>
+            </div>
+            <div class="rank-item clearfix">
+                <div class="rank-name">
+                    潜力榜
+                </div>
+                <div class="rank-intor">
+                    作品七日内有更新且字数在二万至十万之间，按周阅读时长排序
+                </div>
+                <ul class="rank-list" style="margin-top: 26px;">
+                    <li class="active">
+                        <span class="num">1</span>
+                        <div class="book-mid">
+                            <div class="book-name">
+                                书名
+                            </div>
+                            <div class="autor">
+                                作者
+                            </div>
+                            <div class="kinds">
+                                类型1 | 类型2
+                            </div>
+                        </div>
+                        <img src="./img/封面.png" alt="">
+                    </li>
+                    <li><span class="num">1</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">2</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">3</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">4</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">5</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">6</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">7</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">8</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">9</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">10</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                </ul>
+                <span class="check">
+                    查看详情
+                </span>
+            </div>
+            <div class="rank-item clearfix">
+                <div class="rank-name">
+                    完本榜（月）
+                </div>
+                <div class="rank-intor">
+                    八万字以上完本，按周阅读时长排序（ 作品完结 0 - 30 天 ）
+                </div>
+                <ul class="rank-list" style="margin-top: 26px;">
+                    <li class="active">
+                        <span class="num">1</span>
+                        <div class="book-mid">
+                            <div class="book-name">
+                                书名
+                            </div>
+                            <div class="autor">
+                                作者
+                            </div>
+                            <div class="kinds">
+                                类型1 | 类型2
+                            </div>
+                        </div>
+                        <img src="./img/封面.png" alt="">
+                    </li>
+                    <li><span class="num">1</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">2</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">3</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">4</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">5</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">6</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">7</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">8</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">9</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">10</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                </ul>
+                <span class="check">
+                    查看详情
+                </span>
+            </div>
+            <div class="rank-item clearfix">
+                <div class="rank-name">
+                    推荐榜（月）
+                </div>
+                <div class="rank-intor">
+                    按作品过去 1 个月所获得推荐票数排行
+                </div>
+                <ul class="rank-list">
+                    <li class="active">
+                        <span class="num">1</span>
+                        <div class="book-mid">
+                            <div class="book-name">
+                                书名
+                            </div>
+                            <div class="autor">
+                                作者
+                            </div>
+                            <div class="kinds">
+                                类型1 | 类型2
+                            </div>
+                        </div>
+                        <img src="./img/封面.png" alt="">
+                    </li>
+                    <li><span class="num">1</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">2</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">3</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">4</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">5</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">6</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">7</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">8</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">9</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                    <li><span class="num">10</span><span class="book-name">书名</span><span class="kind">类型</span></li>
+                </ul>
+                <span class="check">
+                    查看详情
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="award clearfix">
+        <span class="title">
+            小雅奖
+        </span>
+        <span class="tip">奖励最好的原创写作</span>
+        <span class="more">
+            查看全部
+        </span>
+        <div class="stage">
+            -第一百七十期-
+        </div>
+
+        <div class="award-area">
+            <div class="award-book">
+                <div class="award-title">
+                    最佳连载
+                </div>
+                <div class="intor">
+                    奖励两周内有更新的热门连载，奖金 1000 元。
+                </div>
+                <div class="book">
+                    <div class="book-area">
+                        <img src="./img/封面.png" alt="">
+                        <div class="book-name">
+                            书名
+                        </div>
+                        <div class="book-autor">
+                            作者
+                        </div>
+                        <ul>
+                            <li style="color: #fa595f;">评分 </li>
+                            <li>| 标签1 </li>
+                            <li>| 标签2</li>
+                        </ul>
+                    </div>
+                    <div class="book-intor">
+                        简介
+                    </div>
+                </div>
+            </div>
+            <div class="award-book">
+                <div class="award-title">
+                    最佳作者
+                </div>
+                <div class="intor">
+                    奖励三个月内有新创作的原创作者，奖金 2000 元
+                </div>
+                <div class="autor">
+                    <div class="autor-area clearfix">
+                        <img src="./img/莫妮卡.jpg" alt="">
+                        <div class="autor-name">
+                            莫妮打
+                        </div>
+                        <div class="autor-intor">
+                            5 部作品，1048758 阅读
+                        </div>
+                    </div>
+                    <div class="autor-book">
+                        代表作品：<a href="">《其实她真的好喜欢你》</a> <a href="">《有点心机怎么了》</a>
+                    </div>
+
+                    <div class="autor-intor">
+                        莫妮打是在豆瓣阅读成长起来的新人作者，尤其擅长创作充满烟火气息的言情小说，她以细腻温暖的笔触，写出了一段又一段让读者沉迷其中、或甜或热血的青春，故事里每一个角色都有血有肉、极具真实感。作为新人，莫妮打一直在努力进步，故授予其本期“小雅奖·最佳作者”。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+        <div class="right">
+
+            <a href="">关于豆瓣</a>·
+            <a href="">在豆瓣工作</a>·
+            <a href="">联系我们</a>·
+            <a href="">法律声明</a>·
+            <a href="">帮助中心</a>·
+            <a href="">移动应用</a>·
+            <a href="">豆瓣广告</a>
+
+        </div>
+
+        <div class="left">
+            © 2014 - 2021 read.douban.com, all rights reserved.  北京方舟阅读科技有限公司
+            京ICP备11027288号
+            网络视听许可证0110418号
+            新出发京批字第直160030号
+            文网文[2009]267号  (总)网出证(京)字129号
+        </div>
+
+       
+    </footer>
+
+    <div class="pgh">
+        2019级软工1班彭国浩
+    </div>
+</body>
+
+</html>
